@@ -9,6 +9,10 @@ resource "aws_instance" "MyApp" {
         instance_type = "t2.micro"
         key_name = "CASkeyPair"
         security_groups= ["default"]
+        tags = {
+                Name        = var.instance_name
+        }
+
 
   connection {
     type     = "ssh"
