@@ -1,7 +1,7 @@
 // Configure the Google Cloud provider
 provider "google" {
  project     = "magnus-bergman"
- region      = "us-west1"
+ region      = "europe-north1"
 }
 
 resource "random_id" "instance_id" {
